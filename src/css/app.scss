@@ -1,0 +1,229 @@
+// // app global css in SCSS form
+@font-face {
+  font-family: 'DINNextLTPro';
+  src: url('fonts/DINNextLTPro/DINNextLTPro-Medium.otf');
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@font-face {
+  font-family: 'DINNextLTPro';
+  src: url('fonts/DINNextLTPro/DINNextLTPro-Regular.otf');
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@font-face {
+  font-family: 'DINNextLTPro';
+  src: url('fonts/DINNextLTPro/DINNextLTPro-Bold.otf');
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@font-face {
+  font-family: 'DINNextLTPro';
+  src: url('fonts/DINNextLTPro/DINNextLTPro-Condensed.otf');
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@font-face {
+  font-family: 'DINNextLTPro';
+  src: url('fonts/DINNextLTPro/DINNextLTPro-Light.otf');
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@font-face {
+  font-family: 'DINNextLTPro';
+  src: url('fonts/DINNextLTPro/DINNextLTPro-LightCondensed.otf');
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('fonts/sourceSans/SourceSansPro-Black.otf');
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@font-face {
+  src: url('fonts/sourceSans/SourceSansPro-ExtraLight.otf');
+  font-family: 'SourceSansPro';
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 200;
+}
+@font-face {
+  src: url('fonts/sourceSans/SourceSansPro-Light.otf');
+  font-family: 'SourceSansPro';
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+}
+@font-face {
+  src: url('fonts/sourceSans/SourceSansPro-Regular.otf');
+  font-family: 'SourceSansPro';
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+@font-face {
+  src: url('fonts/sourceSans/SourceSansPro-Semibold.otf');
+  font-family: 'SourceSansPro';
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+}
+@font-face {
+  src: url('fonts/sourceSans/SourceSansPro-Bold.otf');
+  font-family: 'SourceSansPro';
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+}
+
+.mb-2{
+  margin-bottom: 0.7em;
+}
+
+.custom-input .q-field__inner .q-field__control {
+  height: 40px !important;
+}
+
+.q-dialog__inner--minimized > div {
+  max-width: 100% !important;
+  // min-width: 40vw;
+}
+
+.dialog-40 .q-dialog__inner--minimized > div {
+  max-width: 40vw !important;
+  min-width: 40vw !important;
+}
+
+.dialog-100 .q-dialog__inner--minimized > div {
+  max-width: 100% !important;
+}
+
+.mobile .q-dialog__inner--minimized > div {
+  max-width: 100% !important;
+  width: 100vw;
+}
+
+
+.my-sticky-header-table {
+  height: 300px;
+
+  .q-table__top,
+  .q-table__bottom,
+  thead tr:first-child th {
+    background-color: $grey;
+  }
+  thead tr th {
+    position: sticky;
+    z-index: 1;
+  }
+  thead tr:first-child th {
+    top: 0;
+  }
+  &.q-table--loading thead tr:last-child th {
+    top: 48px;
+  }
+}
+
+.q-table th{
+  font-weight: 600;
+}
+
+.q-stepper__header--alternative-labels .q-stepper__tab {
+  padding: 0px;
+  min-height: 50px;
+}
+
+.md-table {
+  .q-table__top,
+  thead tr:first-child th {
+    /* bg color is important for th; just specify one */
+    background-color: #f5f5f5;
+    color: $grey-9;
+  }
+
+  thead tr th {
+    position: sticky;
+    z-index: 1;
+  }
+  /* this will be the loading indicator */
+  thead tr:last-child th {
+    /* height of all previous header rows */
+    top: 48px;
+  }
+  thead tr:first-child th {
+    top: 0;
+  }
+
+  &.q-table__card {
+    box-shadow: none !important;
+    border-radius: 0px;
+  }
+  & .q-table th {
+    border-color: $grey-3;
+  }
+  & tbody {
+    font-weight: 600;
+  }
+}
+
+.icon-inducted:before {
+    content: url("~src/statics/hardware/inducted.png");
+}
+.icon-active:before {
+    content: url("~src/statics/hardware/active.png");
+}
+.icon-dead:before {
+    content: url("~src/statics/hardware/dead.png");
+}
+.icon-averagePower:before {
+    content: url("~src/statics/hardware/averagePower.png");
+}
+.icon-lowPower:before {
+    content: url("~src/statics/hardware/lowPower.png");
+}
+.icon-highPower:before {
+    content: url("~src/statics/hardware/highPower.png");
+}
+.icon-zeroPower:before {
+    content: url("~src/statics/hardware/zeroPower.png");
+}
+.icon-charger:before {
+    content: url("~src/statics/hardware/charger.png");
+}
+.icon-online:before {
+    content: url("~src/statics/hardware/online.png");
+}
+.icon-offline:before {
+    content: url("~src/statics/hardware/offline.png");
+}
+.icon-docked:before {
+    content: url("~src/statics/hardware/docked.png");
+}
+.icon-PPS:before {
+    content: url("~src/statics/hardware/PPS.png");
+}
+.icon-openPPS:before {
+    content: url("~src/statics/hardware/openPPS.png");
+}
+.icon-closePPS:before {
+    content: url("~src/statics/hardware/closePPS.png");
+}
